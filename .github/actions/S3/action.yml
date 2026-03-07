@@ -1,0 +1,15 @@
+name: 'Upload to S3'
+description: 'Upload Index file to S3 for Static Web Hosting'
+inputs:
+  bucket-name:
+    description: 'Name of the S3 bucket'
+    required: true
+  bucket-region:
+    description: 'Region in which bucket is created'
+    required: true
+  dist-folder:
+    description: 'Folder containing deployable file'
+    required: true
+runs:
+  using: 'node16'
+  main: 'main.js'
