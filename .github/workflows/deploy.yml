@@ -59,6 +59,9 @@ jobs:
           path: ./dist
       - name: Output contents
         run: ls
+      - name: Install S3 action dependencies
+        run: npm install
+        working-directory: ./.github/actions/S3
       - name: Deploy site
         uses: ./.github/actions/S3/
         env:
