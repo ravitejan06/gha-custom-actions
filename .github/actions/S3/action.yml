@@ -14,5 +14,5 @@ outputs:
   website-url:
     description: 'The URL of the static S3 Website'
 runs:
-  using: 'node20'
+  using: 'node20'             #updated the version from 16 to 20
   main: 'main.js'
